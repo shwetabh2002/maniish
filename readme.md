@@ -11,6 +11,7 @@ A modern, responsive landing website for Xetralabs built with Next.js, TypeScrip
 - **Component-Based Architecture**: Each section built as a separate React component
 - **TypeScript Support**: Full TypeScript implementation for type safety
 - **Performance Optimized**: Built with Next.js for optimal performance and SEO
+- **Static Export**: Configured for static hosting on platforms like Cloudflare Pages
 
 ## 🚀 Tech Stack
 
@@ -28,7 +29,8 @@ src/
 ├── app/
 │   ├── globals.css          # Global styles and Tailwind imports
 │   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Main page with all sections
+│   ├── page.tsx             # Main page with all sections
+│   └── not-found.tsx        # Custom 404 page
 ├── components/
 │   ├── Header.tsx           # Navigation header with sticky behavior
 │   ├── Hero.tsx             # Hero section with CTAs
@@ -40,6 +42,9 @@ src/
 │   ├── Careers.tsx          # Job openings and benefits
 │   ├── Contact.tsx          # Contact form and information
 │   └── Footer.tsx           # Footer with links and newsletter
+public/
+├── _redirects               # Cloudflare Pages redirects
+└── _headers                 # Cloudflare Pages headers
 ```
 
 ## 🛠️ Installation & Setup
@@ -65,9 +70,58 @@ src/
 ## 📄 Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
+- `npm run build` - Build for production (static export)
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
+- `npm run export` - Build static export for deployment
+
+## 🚀 Deployment
+
+### Cloudflare Pages (Recommended)
+
+This project is optimized for Cloudflare Pages deployment:
+
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Deploy to Cloudflare Pages"
+   git push origin main
+   ```
+
+2. **Connect to Cloudflare Pages**
+   - Go to [Cloudflare Pages](https://pages.cloudflare.com/)
+   - Click "Create a project"
+   - Connect your GitHub repository
+
+3. **Build Settings**
+   - **Build command**: `npm run build`
+   - **Build output directory**: `out`
+   - **Root directory**: `/` (leave empty if repository root)
+
+4. **Environment Variables** (if needed)
+   - Node.js version: `18` or higher
+
+The project includes:
+- `_redirects` file for proper routing
+- `_headers` file for security and caching
+- Static export configuration
+- Custom 404 page
+
+### Other Platforms
+
+#### Vercel
+1. Push code to GitHub
+2. Import project in Vercel
+3. Deploy automatically
+
+#### Netlify
+- Connect GitHub repo and deploy
+- Build command: `npm run build`
+- Publish directory: `out`
+
+#### AWS Amplify
+- Use GitHub integration
+- Build settings: same as above
 
 ## 🎨 Design Features
 
@@ -115,25 +169,28 @@ All components are fully responsive and adapt to different screen sizes.
 
 1. **Hero**: Bold headline with primary and secondary CTAs
 2. **Why Choose Us**: Four key strengths with statistics
-3. **Products**: AI modules and services showcase
+3. **Products & Services**: AI modules and comprehensive service offerings
 4. **Industry Solutions**: Sector-specific offerings
 5. **Technology**: Tech stack and capabilities
-6. **About**: Company information and mission
+6. **About**: Company information and expertise areas
 7. **Careers**: Job openings and company benefits
 8. **Contact**: Contact form and company details
 9. **Footer**: Links, social media, and newsletter signup
 
-## 🚀 Deployment
+## 🐛 Troubleshooting
 
-### Vercel (Recommended)
-1. Push code to GitHub
-2. Import project in Vercel
-3. Deploy automatically
+### 404 Errors on Deployed Site
+If you're getting 404 errors on your deployed site:
 
-### Other Platforms
-- **Netlify**: Connect GitHub repo and deploy
-- **AWS Amplify**: Use GitHub integration
-- **Custom Server**: Run `npm run build` and serve the `out` folder
+1. Ensure you're using the static export build: `npm run build`
+2. Check that `_redirects` file is in the `public/` directory
+3. Verify build output directory is set to `out` in your hosting platform
+4. Make sure `output: 'export'` is in your `next.config.js`
+
+### Build Issues
+- Ensure all dependencies are installed: `npm install`
+- Check Node.js version (18+ recommended)
+- Clear cache: `rm -rf .next out node_modules && npm install`
 
 ## 📞 Support
 

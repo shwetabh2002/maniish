@@ -53,40 +53,58 @@ const Products = () => {
     }
   ]
 
+  const specializedSolutions = [
+    {
+      icon: Database,
+      title: 'Data Solutions',
+      description: 'Advanced data processing, analytics, and business intelligence platforms'
+    },
+    {
+      icon: Settings,
+      title: 'Process Optimization',
+      description: 'Streamline operations with intelligent process automation and optimization'
+    },
+    {
+      icon: TestTube,
+      title: 'Innovation Labs',
+      description: 'Collaborative R&D partnerships to develop breakthrough technologies'
+    }
+  ]
+
   return (
-    <section id="products" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+    <section id="products" className="py-12 sm:py-16 lg:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Our <span className="text-primary-600">Products & Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive AI-driven solutions designed to accelerate your digital transformation 
             and drive sustainable business growth across all industries.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 lg:mb-20">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300 group"
+              className="bg-gray-50 p-6 sm:p-8 rounded-2xl hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="flex items-start space-x-6">
-                <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-200 transition-colors">
-                  <product.icon className="h-8 w-8 text-primary-600" />
+              <div className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-200 transition-colors mx-auto sm:mx-0">
+                  <product.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary-600" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                <div className="flex-1 text-center sm:text-left">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                     {product.description}
                   </p>
                   <ul className="space-y-2">
                     {product.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-gray-700">
-                        <div className="w-2 h-2 bg-primary-600 rounded-full mr-3"></div>
+                      <li key={featureIndex} className="flex items-center justify-center sm:justify-start text-sm sm:text-base text-gray-700">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary-600 rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
                         {feature}
                       </li>
                     ))}
@@ -98,47 +116,37 @@ const Products = () => {
         </div>
 
         {/* Additional Services Section */}
-        <div className="mt-20 bg-gradient-to-br from-primary-50 to-white p-12 rounded-3xl">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="bg-gradient-to-br from-primary-50 to-white p-8 sm:p-12 rounded-2xl sm:rounded-3xl mb-8 sm:mb-12">
+          <div className="text-center mb-8 sm:mb-12">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
               Specialized Solutions
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
               Beyond our core offerings, we provide specialized solutions tailored to specific industry needs
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Database className="h-8 w-8 text-primary-600" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {specializedSolutions.map((solution, index) => (
+              <div key={index} className="text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <solution.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary-600" />
+                </div>
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                  {solution.title}
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600">
+                  {solution.description}
+                </p>
               </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Data Solutions</h4>
-              <p className="text-gray-600">Advanced data processing, analytics, and business intelligence platforms</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Settings className="h-8 w-8 text-primary-600" />
-              </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Process Optimization</h4>
-              <p className="text-gray-600">Streamline operations with intelligent process automation and optimization</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <TestTube className="h-8 w-8 text-primary-600" />
-              </div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Innovation Labs</h4>
-              <p className="text-gray-600">Collaborative R&D partnerships to develop breakthrough technologies</p>
-            </div>
+            ))}
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center">
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+            className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary-600 text-white rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors font-semibold text-base sm:text-lg"
           >
             Explore All Solutions
           </a>
