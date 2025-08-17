@@ -1,10 +1,2 @@
-# Handle client-side routing
-/* /index.html 200
-
-# Specific routes (if needed)
-/products /index.html 200
-/industries /index.html 200
-/technology /index.html 200
-/about /index.html 200
-/careers /index.html 200
-/contact /index.html 200 
+# SPA routing - serve index.html for all routes
+/*    /index.html   200 

@@ -1,0 +1,14 @@
+name = "xetralabs-landing"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+cwd = "."
+
+[build.upload]
+format = "modules"
+dir = "out"
+main = "./index.html"
+
+[[pages]]
+project_name = "xetralabs-landing" 
