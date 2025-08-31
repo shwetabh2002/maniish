@@ -6,14 +6,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@xetralabs.com',
-      action: 'mailto:hello@xetralabs.com'
+          details: 'info@girjasoft.com',
+    action: 'mailto:info@girjasoft.com'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+          details: '+91 96439 17415',
+    action: 'tel:+919643917415'
     },
     {
       icon: MapPin,

@@ -39,7 +39,7 @@ const About = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="text-primary-600">Xetralabs</span>
+              About <span className="text-primary-600">GirjaSoft</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               We are a leading AI technology company dedicated to transforming businesses 
@@ -60,12 +60,7 @@ const About = () => {
               >
                 Learn More
               </a>
-              <a
-                href="#careers"
-                className="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors font-semibold"
-              >
-                Join Our Team
-              </a>
+
             </div>
           </div>
 

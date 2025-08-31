@@ -5,21 +5,20 @@ const Footer = () => {
   const navigation = {
     company: [
       { name: 'About Us', href: '#about' },
-      { name: 'Careers', href: '#careers' },
       { name: 'Contact', href: '#contact' },
       { name: 'Blog', href: '#' },
     ],
     services: [
-      { name: 'AI Modules', href: '#products' },
-      { name: 'Automation', href: '#products' },
+      { name: 'IT Infrastructure', href: '#products' },
+      { name: 'Cloud Services', href: '#products' },
+      { name: 'Cybersecurity', href: '#products' },
       { name: 'Consulting', href: '#products' },
-      { name: 'Development', href: '#products' },
     ],
     industries: [
       { name: 'Healthcare', href: '#industries' },
       { name: 'Finance', href: '#industries' },
-      { name: 'Manufacturing', href: '#industries' },
-      { name: 'Retail', href: '#industries' },
+      { name: 'Education', href: '#industries' },
+      { name: 'Aviation', href: '#industries' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '#' },
@@ -43,12 +42,12 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-6">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
-                Xetralabs
+                                 GirjaSoft
               </h3>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-md">
-                Transforming businesses with AI-driven intelligent services. 
-                We deliver innovative solutions that drive measurable outcomes 
-                and sustainable growth.
+                Transforming businesses with comprehensive IT infrastructure solutions. 
+                We deliver reliable, secure, and scalable services that drive 
+                operational excellence and sustainable growth.
               </p>
             </div>
 
@@ -57,19 +56,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary-400 flex-shrink-0" />
                 <a 
-                  href="mailto:hello@xetralabs.com" 
+                                     href="mailto:info@girjasoft.com" 
                   className="text-gray-300 hover:text-white text-sm sm:text-base transition-colors break-all"
                 >
-                  hello@xetralabs.com
+                                     info@girjasoft.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-primary-400 flex-shrink-0" />
                 <a 
-                  href="tel:+15551234567" 
+                  href="tel:+919643917415" 
                   className="text-gray-300 hover:text-white text-sm sm:text-base transition-colors"
                 >
-                  +1 (555) 123-4567
+                  +91 96439 17415
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -198,7 +197,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-            © 2024 Xetralabs. All rights reserved.
+                         © 2024 GirjaSoft. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 sm:space-x-6">
             <span className="text-gray-400 text-xs sm:text-sm">

@@ -2,12 +2,17 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-inter'
+})
 
 export const metadata: Metadata = {
-  title: 'Xetralabs - AI-driven Intelligent Services',
-  description: 'Next-generation AI-driven intelligent services for modern businesses. Software automation, custom development, and consulting solutions.',
-  keywords: 'AI, artificial intelligence, software automation, custom development, consulting, intelligent modules',
+  title: 'Girjasoft - End-to-End IT Infrastructure Solutions – Reliable. Secure. Scalable.',
+  description: 'We deliver comprehensive IT infrastructure support, ensuring smooth Business-as-Usual operations while enabling successful project execution.',
+  keywords: 'IT Infrastructure, Cybersecurity, Cloud Services, Microsoft Services, Network Security, IT Support, Business IT',
 }
 
 export default function RootLayout({
@@ -16,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={inter.variable}>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+      </body>
     </html>
   )
 } 
