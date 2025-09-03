@@ -18,7 +18,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'San Francisco, CA',
+      details: '71, A Block, Harsh Vihar, Chipyana Buzurg, G Noida, U.P - 201009',
       action: null
     },
     {

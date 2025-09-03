@@ -19,8 +19,8 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: '123 Tech Street, Innovation City, IC 12345',
-      description: 'Our headquarters in the heart of the tech district'
+      details: '71, A Block, Harsh Vihar, Chipyana Buzurg, G Noida, U.P - 201009',
+      description: 'Our headquarters in Greater Noida, Uttar Pradesh'
     },
     {
       icon: Clock,

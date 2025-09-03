@@ -74,7 +74,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary-400 flex-shrink-0" />
                 <span className="text-gray-300 text-sm sm:text-base">
-                  San Francisco, CA
+                  71, A Block, Harsh Vihar, Chipyana Buzurg, G Noida, U.P - 201009
                 </span>
               </div>
             </div>
