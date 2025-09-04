@@ -41,9 +41,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
-                                 GirjaSoft
-              </h3>
+              <div className="flex items-center space-x-3 mb-3 sm:mb-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 via-blue-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group">
+                  <span className="text-white font-black text-base sm:text-lg tracking-tight group-hover:scale-110 transition-transform duration-300">
+                    GS
+                  </span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                  GirjaSoft
+                </h3>
+              </div>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-md">
                 Transforming businesses with comprehensive IT infrastructure solutions. 
                 We deliver reliable, secure, and scalable services that drive 

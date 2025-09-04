@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   title: 'Girjasoft - End-to-End IT Infrastructure Solutions – Reliable. Secure. Scalable.',
   description: 'We deliver comprehensive IT infrastructure support, ensuring smooth Business-as-Usual operations while enabling successful project execution.',
   keywords: 'IT Infrastructure, Cybersecurity, Cloud Services, Microsoft Services, Network Security, IT Support, Business IT',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' }
+    ],
+    apple: { url: '/favicon.svg', type: 'image/svg+xml' }
+  }
 }
 
 export default function RootLayout({

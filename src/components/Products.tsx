@@ -124,7 +124,7 @@ const Products = () => {
         <div className="text-center mb-16 sm:mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
             <Shield className="w-4 h-4 mr-2" />
-            Trusted IT Partner
+            Your Trusted IT Partner
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Powering IT.{' '}
@@ -138,11 +138,11 @@ const Products = () => {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
             <span className="flex items-center">
               <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-              15+ Years Experience
+              9+ Years Experience
             </span>
             <span className="flex items-center">
               <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-              500+ Clients Served
+              20+ Clients Served
             </span>
             <span className="flex items-center">
               <CheckCircle className="w-4 h-4 text-green-500 mr-2" />

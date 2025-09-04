@@ -36,35 +36,39 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-blue-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">G</span>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-600 via-blue-600 to-primary-800 rounded-xl flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 group">
+                <span className="text-white font-black text-lg sm:text-xl tracking-tight group-hover:scale-110 transition-transform duration-300">
+                  GS
+                </span>
               </div>
-              <span className="text-2xl lg:text-3xl font-bold text-gray-900">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
                 GirjaSoft
               </span>
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium text-base relative group ${
-                  item.isHome ? 'text-primary-600 font-semibold' : ''
-                }`}
-              >
-                {item.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full ${
-                  item.isHome ? 'w-full' : ''
-                }`}></span>
-              </Link>
-            ))}
-          </nav>
+          {/* Right Side - Navigation and CTA Buttons */}
+          <div className="hidden lg:flex items-center space-x-8">
+            {/* Desktop Navigation */}
+            <nav className="flex items-center space-x-8">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium text-base relative group ${
+                    item.isHome ? 'text-primary-600 font-semibold' : ''
+                  }`}
+                >
+                  {item.name}
+                  <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full ${
+                    item.isHome ? 'w-full' : ''
+                  }`}></span>
+                </Link>
+              ))}
+            </nav>
 
-          {/* Desktop CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
+            {/* Desktop CTA Buttons */}
+            <div className="flex items-center space-x-4">
             <a
               href="/about"
               className="px-6 py-3 text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200"
@@ -77,6 +81,7 @@ const Header = () => {
             >
               Contact Us
             </a>
+            </div>
           </div>
 
           {/* Mobile menu button */}

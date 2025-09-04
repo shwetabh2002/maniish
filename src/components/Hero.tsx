@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="pt-8 sm:pt-10">
+            {/* <div className="pt-8 sm:pt-10">
               <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 font-medium">
                 Trusted by innovative companies worldwide
               </p>
@@ -60,7 +60,7 @@ const Hero = () => {
                 <div className="h-8 w-20 sm:h-10 sm:w-24 lg:w-28 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30"></div>
                 <div className="hidden sm:block h-8 w-20 sm:h-10 sm:w-24 lg:w-28 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30"></div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
