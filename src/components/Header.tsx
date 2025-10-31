@@ -70,16 +70,20 @@ const Header = () => {
             {/* Desktop CTA Buttons */}
             <div className="flex items-center space-x-4">
             <a
-              href="/about"
+              href="https://hrms.girjasoft.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 text-primary-600 hover:text-primary-700 font-semibold transition-colors duration-200"
             >
-              About Us
+              Login
             </a>
             <a
-              href="/contact"
+              href="https://hrms.girjasoft.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl"
             >
-              Contact Us
+              Signup
             </a>
             </div>
           </div>
@@ -116,18 +120,22 @@ const Header = () => {
               ))}
               <div className="pt-4 space-y-3 border-t border-gray-200 mt-4">
                 <a
-                  href="/about"
+                  href="https://hrms.girjasoft.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-3 py-3 text-primary-600 font-semibold hover:bg-primary-50 rounded-lg transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  About Us
+                  Login
                 </a>
                 <a
-                  href="/contact"
+                  href="https://hrms.girjasoft.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block px-3 py-3 mx-3 bg-primary-600 text-white rounded-lg text-center font-semibold hover:bg-primary-700 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  Contact Us
+                  Signup
                 </a>
               </div>
             </div>
