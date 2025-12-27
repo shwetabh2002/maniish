@@ -83,7 +83,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl"
             >
-              Signup
+             Demo
             </a>
             </div>
           </div>

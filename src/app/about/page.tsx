@@ -78,7 +78,7 @@ export default function AboutPage() {
             </p>
             <div className="inline-flex items-center px-6 py-3 bg-accent-500 text-white rounded-full text-sm font-bold shadow-2xl">
               <Award className="w-5 h-5 mr-3" />
-              Trusted IT Partner Since 2009
+              Trusted IT Partner Since 2019
             </div>
           </div>
         </div>
