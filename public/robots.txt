@@ -1,0 +1,27 @@
+# robots.txt for GirjaSoft
+# https://girjasoft.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://girjasoft.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+

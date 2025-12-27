@@ -1,6 +1,17 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { Shield, Cloud, Server, Users, Zap, Lock, Cog, Workflow, ArrowRight, CheckCircle, Star, TrendingUp } from 'lucide-react'
+import { Shield, Cloud, Server, Users, Zap, Lock, Cog, Workflow, ArrowRight, CheckCircle, Star, TrendingUp, UserCheck } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'IT Services - Infrastructure, Cloud, Security & HRMS',
+  description: 'Comprehensive IT services including BAU support, cloud services, cybersecurity, Microsoft solutions, HRMS software, and 24/7 monitoring. Trusted by 500+ companies.',
+  keywords: ['IT Services India', 'Cloud Services', 'Cybersecurity Services', 'HRMS Software', 'Microsoft Services', 'IT Support', 'Infrastructure Services'],
+  openGraph: {
+    title: 'IT Services - GirjaSoft',
+    description: 'Comprehensive IT services including cloud, security, and HRMS solutions.',
+  },
+}
 
 export default function ServicesPage() {
   const services = [
@@ -115,6 +126,21 @@ export default function ServicesPage() {
       color: 'from-pink-500 to-pink-600',
       bgColor: 'bg-pink-50',
       iconColor: 'text-pink-600'
+    },
+    {
+      icon: UserCheck,
+      title: 'HRMS Software',
+      description: 'Complete Human Resource Management System for attendance, payroll, leave management, and employee lifecycle.',
+      features: [
+        'Attendance & Time Tracking with Biometric Integration',
+        'Payroll Processing & Statutory Compliance (PF, ESI, TDS)',
+        'Leave Management & Performance Appraisals',
+        'Employee Self-Service Portal & Mobile App'
+      ],
+      color: 'from-violet-500 to-violet-600',
+      bgColor: 'bg-violet-50',
+      iconColor: 'text-violet-600',
+      href: '/hrms'
     }
   ]
 

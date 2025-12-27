@@ -1,6 +1,17 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Users, Award, Target, Heart, ArrowRight, CheckCircle, Star, Zap } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us - IT Infrastructure Experts',
+  description: 'GirjaSoft has 15+ years of experience delivering IT infrastructure, HRMS software, and cloud solutions. 500+ clients served with 99.9% uptime. Learn about our mission and values.',
+  keywords: ['About GirjaSoft', 'IT Company India', 'IT Infrastructure Company', 'HRMS Provider', 'Cloud Solutions Provider'],
+  openGraph: {
+    title: 'About GirjaSoft - IT Infrastructure Experts',
+    description: '15+ years of experience delivering IT infrastructure, HRMS software, and cloud solutions.',
+  },
+}
 
 export default function AboutPage() {
   const stats = [
