@@ -1,5 +1,5 @@
 'use client'
-import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Youtube, Facebook } from 'lucide-react'
 
 const Footer = () => {
   const navigation = {
@@ -29,9 +29,9 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { name: 'Twitter', href: '#', icon: Twitter },
-    { name: 'LinkedIn', href: '#', icon: Linkedin },
-    { name: 'GitHub', href: '#', icon: Github },
+    { name: 'Facebook', href: 'https://www.facebook.com/share/1D7ojmWXz4/', icon: Facebook },
+    { name: 'LinkedIn', href: 'https://linkedin.com/company/girjasoft', icon: Linkedin },
+    { name: 'YouTube', href: 'https://www.youtube.com/@GirjaSoft', icon: Youtube },
   ]
 
   return (
@@ -92,6 +92,8 @@ const Footer = () => {
                 <a
                   key={item.name}
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors"
                   aria-label={item.name}
                 >
@@ -207,9 +209,9 @@ const Footer = () => {
                          © 2024 GirjaSoft. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 sm:space-x-6">
-            <span className="text-gray-400 text-xs sm:text-sm">
-              Built with ❤️ using Next.js
-            </span>
+              <span className="text-gray-400 text-xs sm:text-sm">
+                Built with ❤️ by GirjaSoft
+              </span>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ const GIRJASOFT_CONTEXT = `You are GirjaSoft AI Assistant - a helpful, friendly 
 
 ABOUT GIRJASOFT:
 GirjaSoft is an IT infrastructure company providing end-to-end IT solutions. We are reliable, secure, and scalable.
-- 15+ years of experience
+- 9+ years of experience
 - 500+ successful projects
 - 24/7 support and monitoring
 - Certified IT professionals

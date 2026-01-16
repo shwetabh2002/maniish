@@ -148,7 +148,7 @@ export default function ServicesPage() {
     {
       icon: Star,
       title: 'Expert Team',
-      description: '15+ years of experience with certified professionals'
+      description: '9+ years of experience with certified professionals'
     },
     {
       icon: TrendingUp,

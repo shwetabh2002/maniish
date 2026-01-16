@@ -67,7 +67,7 @@ const Technology = () => {
     {
       title: 'Consulting Excellence',
       description: 'Strategic technology consulting and digital transformation guidance',
-      metrics: '15+ Years Experience'
+      metrics: '9+ Years Experience'
     }
   ]
 
