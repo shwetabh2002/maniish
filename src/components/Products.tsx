@@ -1,5 +1,5 @@
 'use client'
-import { Shield, Cloud, Server, Users, Zap, Lock, Cog, Workflow, ArrowRight, CheckCircle } from 'lucide-react'
+import { Shield, Cloud, Server, Users, Zap, Lock, Cog, Workflow, ArrowRight, CheckCircle, UserCheck } from 'lucide-react'
 
 const Products = () => {
   const services = [
@@ -114,6 +114,21 @@ const Products = () => {
       color: 'from-pink-500 to-pink-600',
       bgColor: 'bg-pink-50',
       iconColor: 'text-pink-600'
+    },
+    {
+      icon: UserCheck,
+      title: 'HRMS Software',
+      description: 'Complete Human Resource Management System for attendance, payroll, leave management, and employee lifecycle.',
+      features: [
+        'Attendance & Time Tracking with Biometric Integration',
+        'Payroll Processing & Statutory Compliance (PF, ESI, TDS)',
+        'Leave Management & Performance Appraisals',
+        'Employee Self-Service Portal & Mobile App'
+      ],
+      color: 'from-violet-500 to-violet-600',
+      bgColor: 'bg-violet-50',
+      iconColor: 'text-violet-600',
+      href: '/hrms'
     }
   ]
 

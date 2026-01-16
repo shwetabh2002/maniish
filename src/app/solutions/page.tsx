@@ -1,6 +1,17 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Building2, Car, Plane, Heart, GraduationCap, Globe, ArrowRight, CheckCircle, Star, Zap, Shield, Users } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Industry Solutions - Enterprise, Healthcare, Education & More',
+  description: 'Tailored IT solutions for enterprises, healthcare, education, automotive, aviation, and global businesses. Scalable infrastructure and compliance-ready systems.',
+  keywords: ['Enterprise IT Solutions', 'Healthcare IT', 'Education IT Solutions', 'Industry Solutions', 'Business IT Solutions India'],
+  openGraph: {
+    title: 'Industry Solutions - GirjaSoft',
+    description: 'Tailored IT solutions for enterprises, healthcare, education, and more.',
+  },
+}
 
 export default function SolutionsPage() {
   const solutions = [
