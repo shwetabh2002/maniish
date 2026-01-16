@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+  functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
+
+# Handle trailing slashes
+[[redirects]]
+  from = "/:splat"
+  to = "/:splat/"
+  status = 301
+  force = false
