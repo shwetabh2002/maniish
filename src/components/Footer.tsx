@@ -21,7 +21,7 @@ const Footer = () => {
       { name: 'Aviation', href: '#industries' },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#' },
+      { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Terms of Service', href: '#' },
       { name: 'Cookie Policy', href: '#' },
       { name: 'Security', href: '#' },

@@ -105,8 +105,9 @@ const jsonLd = {
     availableLanguage: ['English', 'Hindi']
   },
   sameAs: [
+    'https://www.facebook.com/share/1D7ojmWXz4/',
     'https://www.linkedin.com/company/girjasoft',
-    'https://twitter.com/girjasoft'
+    'https://www.youtube.com/@GirjaSoft'
   ],
   offers: {
     '@type': 'AggregateOffer',
