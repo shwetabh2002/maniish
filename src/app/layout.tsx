@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import ChatBot from '@/components/ChatBot'
+// import ChatBot from '@/components/ChatBot'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -149,7 +149,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
-        <ChatBot />
+        {/* <ChatBot /> */}
       </body>
     </html>
   )
